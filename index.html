@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Kilombo Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<header>Kilombo Restaurant</header>
+
+<div class="menu-tabs">
+  <button onclick="showMenu('all')" class="active">Alle anzeigen</button>
+  <button onclick="showMenu('salate')">Salate</button>
+  <button onclick="showMenu('snacks')">Afro-Snacks</button>
+  <button onclick="showMenu('grill')">Grillgerichte</button>
+  <button onclick="showMenu('vegetarisch')">Vegetarische Gerichte</button>
+  <button onclick="showMenu('beilagen')">Beilagen</button>
+</div>
+
+<div id="all" class="menu-content active">
+  <div class="menu-item">
+    <h3>Kilombo Big Salat</h3>
+    <p>Gemischter Salat mit Kochbananen, Yam, afrikanischen Süßkartoffeln, roten Zwiebeln, Tomaten, Landgurken, Oliven, Schafskäse, Dressing...</p>
+    <strong>9,50 €</strong>
+  </div>
+  <div class="menu-item">
+    <h3>Kilombo Fried Chicken</h3>
+    <p>Frittierte Hähnchenflügel afrikanisch gewürzt mit Penja-Pfeffer aus Kamerun</p>
+    <strong>12,50 €</strong>
+  </div>
+  <div class="menu-item">
+    <h3>Kilombo Jollofreis</h3>
+    <p>Mit einer Zutat nach Wahl.</p>
+    <strong>15,50 €</strong>
+  </div>
+</div>
+
+<div id="salate" class="menu-content">
+  <div class="menu-item">
+    <h3>Kilombo Big Salat</h3>
+    <p>Gemischter Salat mit Kochbananen, Yam, afrikanischen Süßkartoffeln...</p>
+    <strong>9,50 €</strong>
+  </div>
+</div>
+
+<div id="snacks" class="menu-content">
+  <div class="menu-item">
+    <h3>Kilombo Fried Chicken</h3>
+    <p>Frittierte Hähnchenflügel afrikanisch gewürzt mit Penja-Pfeffer aus Kamerun</p>
+    <strong>12,50 €</strong>
+  </div>
+</div>
+
+<div id="grill" class="menu-content">
+  <div class="menu-item">
+    <h3>Kilombo Jollofreis</h3>
+    <p>Mit einer Zutat nach Wahl.</p>
+    <strong>15,50 €</strong>
+  </div>
+</div>
+
+<footer class="footer">
+  <p><strong>Über Kilombo:</strong> Authentische afrikanische Küche mit Liebe zubereitet.</p>
+  <p><strong>Adresse:</strong> Musterstraße 12, 12345 Berlin</p>
+  <p><strong>Telefon:</strong> +49 123 456 789</p>
+  <p><strong>Öffnungszeiten:</strong> Mo-So: 12:00 - 22:00 Uhr</p>
+</footer>
+
+<script>
+  function showMenu(category) {
+    document.querySelectorAll('.menu-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.menu-tabs button').forEach(el => el.classList.remove('active'));
+    document.getElementById(category).classList.add('active');
+    event.currentTarget.classList.add('active');
+  }
+</script>
+</body>
+</html>

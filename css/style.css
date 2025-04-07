@@ -1,0 +1,143 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+  background: red;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+.menu-tabs button {
+  background: red;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.menu-tabs button:hover, .menu-tabs button.active {
+  background: darkred;
+}
+.menu-content {
+  display: none;
+  padding: 20px;
+}
+.menu-content.active {
+  display: block;
+}
+.menu-item {
+  background: #222;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.3);
+}
+.menu-item div {
+  text-align: left;
+}
+.footer {
+  background: #111;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
