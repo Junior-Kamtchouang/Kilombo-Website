@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Kilombo-Website.iml" filepath="$PROJECT_DIR$/../Kilombo-Website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kilombo-Website.iml" filepath="$PROJECT_DIR$/.idea/Kilombo-Website.iml" />
     </modules>
   </component>
 </project>
